@@ -1,0 +1,619 @@
+2026-04-18 15:21:20 | INFO     | utils.excel_reader | Reading data from 'data/login_data.xlsx' -> sheet 'LoginData'
+2026-04-18 15:21:20 | INFO     | utils.excel_reader | Loaded 5 row(s) from Excel
+2026-04-18 15:21:21 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:21:24 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:21:24 | INFO     | test_tc01_data_driven_login | TC01 | username='Admin' | expected='pass'
+2026-04-18 15:21:24 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:21:25 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:21:25 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:21:25 | INFO     | pages.login_page | Entering password
+2026-04-18 15:21:25 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:21:25 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:21:25 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:21:25 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:21:25 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:21:26 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:21:27 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//h6[text()='Dashboard']")
+2026-04-18 15:21:27 | INFO     | test_tc01_data_driven_login | Login successful — dashboard is visible
+2026-04-18 15:21:27 | INFO     | pages.home_page | Logging out
+2026-04-18 15:21:27 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//li[contains(@class,'oxd-userdropdown')]")
+2026-04-18 15:21:27 | DEBUG    | pages.base_page | Clicking: ('xpath', "//li[contains(@class,'oxd-userdropdown')]")
+2026-04-18 15:21:27 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//a[text()='Logout']")
+2026-04-18 15:21:27 | DEBUG    | pages.base_page | Clicking: ('xpath', "//a[text()='Logout']")
+2026-04-18 15:21:28 | DEBUG    | utils.wait_helpers | URL now contains: 'login'
+2026-04-18 15:21:28 | INFO     | test_tc01_data_driven_login | Logout successful
+2026-04-18 15:21:28 | INFO     | conftest | Closing browser
+2026-04-18 15:21:31 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:21:33 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:21:33 | INFO     | test_tc01_data_driven_login | TC01 | username='Admin' | expected='fail'
+2026-04-18 15:21:34 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:21:34 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:21:34 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:21:34 | INFO     | pages.login_page | Entering password
+2026-04-18 15:21:34 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:21:34 | DEBUG    | pages.base_page | Typing 'wrongpassword' into ('name', 'password')
+2026-04-18 15:21:34 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:21:34 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:21:34 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:21:36 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//p[contains(@class,'oxd-alert-content-text')]")
+2026-04-18 15:21:36 | INFO     | test_tc01_data_driven_login | Login correctly rejected. Error: 'Invalid credentials'
+2026-04-18 15:21:36 | INFO     | conftest | Closing browser
+2026-04-18 15:21:39 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:21:41 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:21:41 | INFO     | test_tc01_data_driven_login | TC01 | username='invaliduser' | expected='fail'
+2026-04-18 15:21:42 | INFO     | pages.login_page | Entering username: 'invaliduser'
+2026-04-18 15:21:42 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:21:42 | DEBUG    | pages.base_page | Typing 'invaliduser' into ('name', 'username')
+2026-04-18 15:21:42 | INFO     | pages.login_page | Entering password
+2026-04-18 15:21:42 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:21:42 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:21:42 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:21:42 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:21:42 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:21:44 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//p[contains(@class,'oxd-alert-content-text')]")
+2026-04-18 15:21:44 | INFO     | test_tc01_data_driven_login | Login correctly rejected. Error: 'Invalid credentials'
+2026-04-18 15:21:44 | INFO     | conftest | Closing browser
+2026-04-18 15:21:47 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:21:49 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:21:49 | INFO     | test_tc01_data_driven_login | TC01 | username='' | expected='fail'
+2026-04-18 15:21:49 | INFO     | pages.login_page | Entering username: ''
+2026-04-18 15:21:50 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:21:50 | DEBUG    | pages.base_page | Typing '' into ('name', 'username')
+2026-04-18 15:21:50 | INFO     | pages.login_page | Entering password
+2026-04-18 15:21:50 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:21:50 | DEBUG    | pages.base_page | Typing '' into ('name', 'password')
+2026-04-18 15:21:50 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:21:50 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:21:50 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:22:06 | ERROR    | utils.wait_helpers | Timeout: element not visible after 15s — ('xpath', "//p[contains(@class,'oxd-alert-content-text')]")
+2026-04-18 15:22:06 | INFO     | conftest | Closing browser
+2026-04-18 15:22:08 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:22:11 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:22:11 | INFO     | test_tc01_data_driven_login | TC01 | username='Admin' | expected='fail'
+2026-04-18 15:22:12 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:22:12 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:22:12 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:22:13 | INFO     | pages.login_page | Entering password
+2026-04-18 15:22:13 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:22:13 | DEBUG    | pages.base_page | Typing '' into ('name', 'password')
+2026-04-18 15:22:13 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:22:13 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:22:13 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:22:28 | ERROR    | utils.wait_helpers | Timeout: element not visible after 15s — ('xpath', "//p[contains(@class,'oxd-alert-content-text')]")
+2026-04-18 15:22:28 | INFO     | conftest | Closing browser
+2026-04-18 15:22:31 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:22:41 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:22:41 | INFO     | test_tc02_home_url | TC02 | URL='https://opensource-demo.orangehrmlive.com/web/index.php/auth/login' | Title='OrangeHRM'
+2026-04-18 15:22:41 | INFO     | test_tc02_home_url | TC02 PASSED — Home URL is accessible
+2026-04-18 15:22:41 | INFO     | conftest | Closing browser
+2026-04-18 15:22:44 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:22:47 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:22:48 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:22:48 | INFO     | test_tc03_login_fields | TC03 | Username field is visible
+2026-04-18 15:22:48 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:22:48 | INFO     | test_tc03_login_fields | TC03 | Username field is enabled
+2026-04-18 15:22:48 | INFO     | conftest | Closing browser
+2026-04-18 15:22:51 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:22:54 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:22:55 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:22:55 | INFO     | test_tc03_login_fields | TC03 | Password field is visible
+2026-04-18 15:22:55 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:22:55 | INFO     | test_tc03_login_fields | TC03 | Password field is enabled
+2026-04-18 15:22:55 | INFO     | conftest | Closing browser
+2026-04-18 15:22:58 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:23:01 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:23:01 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:23:02 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:23:02 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:23:02 | INFO     | pages.login_page | Entering password
+2026-04-18 15:23:02 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:23:02 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:23:02 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:23:02 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:23:02 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:23:03 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:23:04 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//a[contains(@href,'viewAdminModule')]")
+2026-04-18 15:23:04 | INFO     | test_tc04_menu_items | TC04 | 'Admin' is visible
+2026-04-18 15:23:04 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//a[contains(@href,'viewAdminModule')]")
+2026-04-18 15:23:04 | INFO     | test_tc04_menu_items | TC04 | 'Admin' is clickable
+2026-04-18 15:23:04 | INFO     | conftest | Closing browser
+2026-04-18 15:23:06 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:23:10 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:23:10 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:23:11 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:23:11 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:23:11 | INFO     | pages.login_page | Entering password
+2026-04-18 15:23:11 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:23:11 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:23:11 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:23:11 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:23:11 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:23:12 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:23:13 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[normalize-space()='PIM']")
+2026-04-18 15:23:13 | INFO     | test_tc04_menu_items | TC04 | 'PIM' is visible
+2026-04-18 15:23:13 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//span[normalize-space()='PIM']")
+2026-04-18 15:23:13 | INFO     | test_tc04_menu_items | TC04 | 'PIM' is clickable
+2026-04-18 15:23:13 | INFO     | conftest | Closing browser
+2026-04-18 15:23:15 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:23:18 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:23:19 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:23:19 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:23:19 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:23:19 | INFO     | pages.login_page | Entering password
+2026-04-18 15:23:19 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:23:19 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:23:19 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:23:19 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:23:19 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:23:20 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:23:21 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[text()='Leave']")
+2026-04-18 15:23:21 | INFO     | test_tc04_menu_items | TC04 | 'Leave' is visible
+2026-04-18 15:23:21 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//span[text()='Leave']")
+2026-04-18 15:23:21 | INFO     | test_tc04_menu_items | TC04 | 'Leave' is clickable
+2026-04-18 15:23:21 | INFO     | conftest | Closing browser
+2026-04-18 15:23:24 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:23:28 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:23:28 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:23:29 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:23:29 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:23:29 | INFO     | pages.login_page | Entering password
+2026-04-18 15:23:29 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:23:29 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:23:29 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:23:29 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:23:29 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:23:30 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:23:30 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[text()='Time']")
+2026-04-18 15:23:30 | INFO     | test_tc04_menu_items | TC04 | 'Time' is visible
+2026-04-18 15:23:30 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//span[text()='Time']")
+2026-04-18 15:23:30 | INFO     | test_tc04_menu_items | TC04 | 'Time' is clickable
+2026-04-18 15:23:30 | INFO     | conftest | Closing browser
+2026-04-18 15:23:33 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:23:36 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:23:37 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:23:37 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:23:37 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:23:37 | INFO     | pages.login_page | Entering password
+2026-04-18 15:23:37 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:23:37 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:23:37 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:23:37 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:23:37 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:23:39 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:23:39 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[text()='Recruitment']")
+2026-04-18 15:23:39 | INFO     | test_tc04_menu_items | TC04 | 'Recruitment' is visible
+2026-04-18 15:23:39 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//span[text()='Recruitment']")
+2026-04-18 15:23:39 | INFO     | test_tc04_menu_items | TC04 | 'Recruitment' is clickable
+2026-04-18 15:23:39 | INFO     | conftest | Closing browser
+2026-04-18 15:23:42 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:23:48 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:23:48 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:23:49 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:23:49 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:23:49 | INFO     | pages.login_page | Entering password
+2026-04-18 15:23:49 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:23:49 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:23:49 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:23:49 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:23:49 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:23:50 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:23:50 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[normalize-space()='My Info']")
+2026-04-18 15:23:50 | INFO     | test_tc04_menu_items | TC04 | 'My Info' is visible
+2026-04-18 15:23:50 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//span[normalize-space()='My Info']")
+2026-04-18 15:23:50 | INFO     | test_tc04_menu_items | TC04 | 'My Info' is clickable
+2026-04-18 15:23:50 | INFO     | conftest | Closing browser
+2026-04-18 15:23:53 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:23:56 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:23:57 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:23:57 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:23:57 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:23:57 | INFO     | pages.login_page | Entering password
+2026-04-18 15:23:57 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:23:57 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:23:57 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:23:57 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:23:57 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:23:58 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:23:59 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[text()='Performance']")
+2026-04-18 15:23:59 | INFO     | test_tc04_menu_items | TC04 | 'Performance' is visible
+2026-04-18 15:23:59 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//span[text()='Performance']")
+2026-04-18 15:23:59 | INFO     | test_tc04_menu_items | TC04 | 'Performance' is clickable
+2026-04-18 15:23:59 | INFO     | conftest | Closing browser
+2026-04-18 15:24:02 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:24:04 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:24:05 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:24:05 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:24:05 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:24:05 | INFO     | pages.login_page | Entering password
+2026-04-18 15:24:05 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:24:05 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:24:05 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:24:05 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:24:05 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:24:06 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:24:07 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[text()='Dashboard']")
+2026-04-18 15:24:07 | INFO     | test_tc04_menu_items | TC04 | 'Dashboard' is visible
+2026-04-18 15:24:07 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//span[text()='Dashboard']")
+2026-04-18 15:24:07 | INFO     | test_tc04_menu_items | TC04 | 'Dashboard' is clickable
+2026-04-18 15:24:07 | INFO     | conftest | Closing browser
+2026-04-18 15:24:10 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:24:12 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:24:13 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:24:13 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:24:13 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:24:13 | INFO     | pages.login_page | Entering password
+2026-04-18 15:24:13 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:24:13 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:24:13 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:24:13 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:24:13 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:24:15 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:24:15 | INFO     | test_tc05_create_user | TC05 | Admin logged in
+2026-04-18 15:24:15 | INFO     | pages.home_page | Clicking menu: 'Admin'
+2026-04-18 15:24:15 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//a[contains(@href,'viewAdminModule')]")
+2026-04-18 15:24:16 | DEBUG    | utils.wait_helpers | URL now contains: 'viewSystemUsers'
+2026-04-18 15:24:16 | INFO     | pages.admin_page | Clicking 'Add' user button
+2026-04-18 15:24:17 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[normalize-space()='Add']")
+2026-04-18 15:24:17 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[normalize-space()='Add']")
+2026-04-18 15:24:17 | INFO     | pages.admin_page | Selecting user role: 'ESS'
+2026-04-18 15:24:18 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "(//div[@class='oxd-select-text-input'])[1]")
+2026-04-18 15:24:18 | DEBUG    | pages.base_page | Clicking: ('xpath', "(//div[@class='oxd-select-text-input'])[1]")
+2026-04-18 15:24:18 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//span[text()='ESS']")
+2026-04-18 15:24:18 | DEBUG    | pages.base_page | Clicking: ('xpath', "//span[text()='ESS']")
+2026-04-18 15:24:18 | INFO     | pages.admin_page | Entering employee name: 'Peter Mac Anderson'
+2026-04-18 15:24:18 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//input[@placeholder='Type for hints...']")
+2026-04-18 15:24:26 | INFO     | pages.admin_page | Selecting status: 'Enabled'
+2026-04-18 15:24:26 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "(//div[@class='oxd-select-text-input'])[2]")
+2026-04-18 15:24:26 | DEBUG    | pages.base_page | Clicking: ('xpath', "(//div[@class='oxd-select-text-input'])[2]")
+2026-04-18 15:24:26 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//span[text()='Enabled']")
+2026-04-18 15:24:26 | DEBUG    | pages.base_page | Clicking: ('xpath', "//span[text()='Enabled']")
+2026-04-18 15:24:26 | INFO     | pages.admin_page | Entering username: 'testuser_auto01'
+2026-04-18 15:24:26 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//label[text()='Username']/following::input[1]")
+2026-04-18 15:24:26 | DEBUG    | pages.base_page | Typing 'testuser_auto01' into ('xpath', "//label[text()='Username']/following::input[1]")
+2026-04-18 15:24:26 | INFO     | pages.admin_page | Entering password for new user
+2026-04-18 15:24:26 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "(//input[@type='password'])[1]")
+2026-04-18 15:24:26 | DEBUG    | pages.base_page | Typing 'Test@1234!' into ('xpath', "(//input[@type='password'])[1]")
+2026-04-18 15:24:26 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "(//input[@type='password'])[2]")
+2026-04-18 15:24:26 | DEBUG    | pages.base_page | Typing 'Test@1234!' into ('xpath', "(//input[@type='password'])[2]")
+2026-04-18 15:24:26 | INFO     | pages.admin_page | Saving new user
+2026-04-18 15:24:26 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:24:26 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:24:28 | INFO     | test_tc05_create_user | TC05 | New user 'testuser_auto01' created
+2026-04-18 15:24:28 | INFO     | pages.home_page | Logging out
+2026-04-18 15:24:28 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//li[contains(@class,'oxd-userdropdown')]")
+2026-04-18 15:24:28 | DEBUG    | pages.base_page | Clicking: ('xpath', "//li[contains(@class,'oxd-userdropdown')]")
+2026-04-18 15:24:28 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//a[text()='Logout']")
+2026-04-18 15:24:28 | DEBUG    | pages.base_page | Clicking: ('xpath', "//a[text()='Logout']")
+2026-04-18 15:24:29 | DEBUG    | utils.wait_helpers | URL now contains: 'login'
+2026-04-18 15:24:29 | INFO     | test_tc05_create_user | TC05 | Admin logged out
+2026-04-18 15:24:29 | INFO     | pages.login_page | Entering username: 'testuser_auto01'
+2026-04-18 15:24:30 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:24:30 | DEBUG    | pages.base_page | Typing 'testuser_auto01' into ('name', 'username')
+2026-04-18 15:24:30 | INFO     | pages.login_page | Entering password
+2026-04-18 15:24:30 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:24:30 | DEBUG    | pages.base_page | Typing 'Test@1234!' into ('name', 'password')
+2026-04-18 15:24:30 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:24:30 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:24:30 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:24:31 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:24:31 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//h6[text()='Dashboard']")
+2026-04-18 15:24:31 | INFO     | test_tc05_create_user | TC05 | New user 'testuser_auto01' logged in successfully
+2026-04-18 15:24:31 | INFO     | conftest | Closing browser
+2026-04-18 15:24:34 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:24:37 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:24:38 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:24:38 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:24:38 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:24:38 | INFO     | pages.login_page | Entering password
+2026-04-18 15:24:38 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:24:38 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:24:38 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:24:38 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:24:38 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:24:40 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:24:40 | INFO     | test_tc06_user_in_admin_list | TC06 | Admin logged in
+2026-04-18 15:24:40 | INFO     | pages.home_page | Clicking menu: 'Admin'
+2026-04-18 15:24:40 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//a[contains(@href,'viewAdminModule')]")
+2026-04-18 15:24:41 | DEBUG    | utils.wait_helpers | URL now contains: 'viewSystemUsers'
+2026-04-18 15:24:41 | INFO     | test_tc06_user_in_admin_list | TC06 | On User Management page
+2026-04-18 15:24:41 | INFO     | pages.admin_page | Searching for user: 'testuser_auto01'
+2026-04-18 15:24:42 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//label[text()='Username']/following::input[1]")
+2026-04-18 15:24:42 | DEBUG    | pages.base_page | Typing 'testuser_auto01' into ('xpath', "//label[text()='Username']/following::input[1]")
+2026-04-18 15:24:42 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:24:42 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:24:44 | INFO     | test_tc06_user_in_admin_list | TC06 | Search submitted for 'testuser_auto01'
+2026-04-18 15:24:44 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//div[@class='oxd-table-body']//div[@role='row'][1]//div[@role='cell'][2]")
+2026-04-18 15:24:44 | INFO     | test_tc06_user_in_admin_list | TC06 | User 'testuser_auto01' found in admin list
+2026-04-18 15:24:44 | INFO     | conftest | Closing browser
+2026-04-18 15:24:47 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:24:49 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:24:50 | INFO     | test_tc07_forgot_password | TC07 | On login page
+2026-04-18 15:24:50 | INFO     | pages.login_page | Clicking 'Forgot your password?' link
+2026-04-18 15:24:50 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//p[contains(@class,'orangehrm-login-forgot')]")
+2026-04-18 15:24:51 | DEBUG    | utils.wait_helpers | URL now contains: 'requestPasswordResetCode'
+2026-04-18 15:24:51 | INFO     | test_tc07_forgot_password | TC07 | Redirected to password reset page
+2026-04-18 15:24:51 | INFO     | pages.login_page | Submitting password reset for username: 'Admin'
+2026-04-18 15:24:51 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//input[@name='username']")
+2026-04-18 15:24:51 | DEBUG    | pages.base_page | Typing 'Admin' into ('xpath', "//input[@name='username']")
+2026-04-18 15:24:51 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:24:51 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:24:51 | INFO     | test_tc07_forgot_password | TC07 | Reset form submitted
+2026-04-18 15:25:52 | INFO     | test_tc07_forgot_password | TC07 | Password reset confirmed. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/requestResetPassword
+2026-04-18 15:25:52 | INFO     | conftest | Closing browser
+2026-04-18 15:25:54 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:25:58 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:25:58 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:25:59 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:25:59 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:25:59 | INFO     | pages.login_page | Entering password
+2026-04-18 15:25:59 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:25:59 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:25:59 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:25:59 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:25:59 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:26:00 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:26:00 | INFO     | pages.home_page | Clicking menu: 'My Info'
+2026-04-18 15:26:01 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[normalize-space()='My Info']")
+2026-04-18 15:26:02 | DEBUG    | utils.wait_helpers | URL now contains: 'viewPersonalDetails'
+2026-04-18 15:26:02 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//a[text()='Personal Details']")
+2026-04-18 15:26:02 | INFO     | test_tc08_my_info_menu | TC08 | 'Personal Details' is visible
+2026-04-18 15:26:02 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//a[text()='Personal Details']")
+2026-04-18 15:26:02 | INFO     | test_tc08_my_info_menu | TC08 | 'Personal Details' is clickable
+2026-04-18 15:26:02 | INFO     | conftest | Closing browser
+2026-04-18 15:26:05 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:26:08 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:26:08 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:26:09 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:26:09 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:26:09 | INFO     | pages.login_page | Entering password
+2026-04-18 15:26:09 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:26:09 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:26:09 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:26:09 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:26:09 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:26:10 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:26:10 | INFO     | pages.home_page | Clicking menu: 'My Info'
+2026-04-18 15:26:10 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[normalize-space()='My Info']")
+2026-04-18 15:26:11 | DEBUG    | utils.wait_helpers | URL now contains: 'viewPersonalDetails'
+2026-04-18 15:26:12 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//a[text()='Contact Details']")
+2026-04-18 15:26:12 | INFO     | test_tc08_my_info_menu | TC08 | 'Contact Details' is visible
+2026-04-18 15:26:12 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//a[text()='Contact Details']")
+2026-04-18 15:26:12 | INFO     | test_tc08_my_info_menu | TC08 | 'Contact Details' is clickable
+2026-04-18 15:26:12 | INFO     | conftest | Closing browser
+2026-04-18 15:26:15 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:26:18 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:26:18 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:26:19 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:26:19 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:26:19 | INFO     | pages.login_page | Entering password
+2026-04-18 15:26:19 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:26:19 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:26:19 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:26:19 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:26:19 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:26:20 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:26:20 | INFO     | pages.home_page | Clicking menu: 'My Info'
+2026-04-18 15:26:20 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[normalize-space()='My Info']")
+2026-04-18 15:26:21 | DEBUG    | utils.wait_helpers | URL now contains: 'viewPersonalDetails'
+2026-04-18 15:26:22 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//a[text()='Emergency Contacts']")
+2026-04-18 15:26:22 | INFO     | test_tc08_my_info_menu | TC08 | 'Emergency Contacts' is visible
+2026-04-18 15:26:22 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//a[text()='Emergency Contacts']")
+2026-04-18 15:26:22 | INFO     | test_tc08_my_info_menu | TC08 | 'Emergency Contacts' is clickable
+2026-04-18 15:26:22 | INFO     | conftest | Closing browser
+2026-04-18 15:26:25 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:26:27 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:26:28 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:26:28 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:26:28 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:26:28 | INFO     | pages.login_page | Entering password
+2026-04-18 15:26:28 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:26:28 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:26:28 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:26:28 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:26:28 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:26:30 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:26:30 | INFO     | pages.home_page | Clicking menu: 'My Info'
+2026-04-18 15:26:30 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[normalize-space()='My Info']")
+2026-04-18 15:26:32 | DEBUG    | utils.wait_helpers | URL now contains: 'viewPersonalDetails'
+2026-04-18 15:26:32 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//a[text()='Dependents']")
+2026-04-18 15:26:32 | INFO     | test_tc08_my_info_menu | TC08 | 'Dependents' is visible
+2026-04-18 15:26:32 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//a[text()='Dependents']")
+2026-04-18 15:26:32 | INFO     | test_tc08_my_info_menu | TC08 | 'Dependents' is clickable
+2026-04-18 15:26:32 | INFO     | conftest | Closing browser
+2026-04-18 15:26:35 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:26:38 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:26:39 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:26:39 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:26:39 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:26:39 | INFO     | pages.login_page | Entering password
+2026-04-18 15:26:39 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:26:39 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:26:39 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:26:39 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:26:39 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:26:40 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:26:40 | INFO     | pages.home_page | Clicking menu: 'My Info'
+2026-04-18 15:26:41 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[normalize-space()='My Info']")
+2026-04-18 15:26:42 | DEBUG    | utils.wait_helpers | URL now contains: 'viewPersonalDetails'
+2026-04-18 15:26:43 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//a[text()='Immigration']")
+2026-04-18 15:26:43 | INFO     | test_tc08_my_info_menu | TC08 | 'Immigration' is visible
+2026-04-18 15:26:43 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//a[text()='Immigration']")
+2026-04-18 15:26:43 | INFO     | test_tc08_my_info_menu | TC08 | 'Immigration' is clickable
+2026-04-18 15:26:43 | INFO     | conftest | Closing browser
+2026-04-18 15:26:45 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:26:48 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:26:49 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:26:50 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:26:50 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:26:50 | INFO     | pages.login_page | Entering password
+2026-04-18 15:26:50 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:26:50 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:26:50 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:26:50 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:26:50 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:26:51 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:26:51 | INFO     | pages.home_page | Clicking menu: 'My Info'
+2026-04-18 15:26:51 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[normalize-space()='My Info']")
+2026-04-18 15:26:52 | DEBUG    | utils.wait_helpers | URL now contains: 'viewPersonalDetails'
+2026-04-18 15:26:53 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//a[text()='Job']")
+2026-04-18 15:26:53 | INFO     | test_tc08_my_info_menu | TC08 | 'Job' is visible
+2026-04-18 15:26:53 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//a[text()='Job']")
+2026-04-18 15:26:53 | INFO     | test_tc08_my_info_menu | TC08 | 'Job' is clickable
+2026-04-18 15:26:53 | INFO     | conftest | Closing browser
+2026-04-18 15:26:56 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:26:58 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:26:59 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:26:59 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:26:59 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:26:59 | INFO     | pages.login_page | Entering password
+2026-04-18 15:26:59 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:26:59 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:26:59 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:26:59 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:26:59 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:27:00 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:27:00 | INFO     | pages.home_page | Clicking menu: 'My Info'
+2026-04-18 15:27:01 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[normalize-space()='My Info']")
+2026-04-18 15:27:02 | DEBUG    | utils.wait_helpers | URL now contains: 'viewPersonalDetails'
+2026-04-18 15:27:03 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//a[text()='Salary']")
+2026-04-18 15:27:03 | INFO     | test_tc08_my_info_menu | TC08 | 'Salary' is visible
+2026-04-18 15:27:03 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//a[text()='Salary']")
+2026-04-18 15:27:03 | INFO     | test_tc08_my_info_menu | TC08 | 'Salary' is clickable
+2026-04-18 15:27:03 | INFO     | conftest | Closing browser
+2026-04-18 15:27:05 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:27:09 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:27:09 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:27:10 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:27:10 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:27:10 | INFO     | pages.login_page | Entering password
+2026-04-18 15:27:10 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:27:10 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:27:10 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:27:10 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:27:10 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:27:11 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:27:11 | INFO     | pages.home_page | Clicking menu: 'My Info'
+2026-04-18 15:27:11 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[normalize-space()='My Info']")
+2026-04-18 15:27:12 | DEBUG    | utils.wait_helpers | URL now contains: 'viewPersonalDetails'
+2026-04-18 15:27:13 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//a[text()='Report-to']")
+2026-04-18 15:27:13 | INFO     | test_tc08_my_info_menu | TC08 | 'Report-to' is visible
+2026-04-18 15:27:13 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//a[text()='Report-to']")
+2026-04-18 15:27:13 | INFO     | test_tc08_my_info_menu | TC08 | 'Report-to' is clickable
+2026-04-18 15:27:13 | INFO     | conftest | Closing browser
+2026-04-18 15:27:16 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:27:18 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:27:19 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:27:19 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:27:19 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:27:20 | INFO     | pages.login_page | Entering password
+2026-04-18 15:27:20 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:27:20 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:27:20 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:27:20 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:27:20 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:27:21 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:27:21 | INFO     | pages.home_page | Clicking menu: 'My Info'
+2026-04-18 15:27:21 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[normalize-space()='My Info']")
+2026-04-18 15:27:22 | DEBUG    | utils.wait_helpers | URL now contains: 'viewPersonalDetails'
+2026-04-18 15:27:23 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//a[text()='Qualifications']")
+2026-04-18 15:27:23 | INFO     | test_tc08_my_info_menu | TC08 | 'Qualifications' is visible
+2026-04-18 15:27:23 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//a[text()='Qualifications']")
+2026-04-18 15:27:23 | INFO     | test_tc08_my_info_menu | TC08 | 'Qualifications' is clickable
+2026-04-18 15:27:23 | INFO     | conftest | Closing browser
+2026-04-18 15:27:26 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:27:29 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:27:29 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:27:30 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:27:30 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:27:30 | INFO     | pages.login_page | Entering password
+2026-04-18 15:27:30 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:27:30 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:27:30 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:27:30 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:27:30 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:27:31 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:27:31 | INFO     | pages.home_page | Clicking menu: 'My Info'
+2026-04-18 15:27:32 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[normalize-space()='My Info']")
+2026-04-18 15:27:34 | DEBUG    | utils.wait_helpers | URL now contains: 'viewPersonalDetails'
+2026-04-18 15:27:34 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//a[text()='Memberships']")
+2026-04-18 15:27:34 | INFO     | test_tc08_my_info_menu | TC08 | 'Memberships' is visible
+2026-04-18 15:27:34 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//a[text()='Memberships']")
+2026-04-18 15:27:34 | INFO     | test_tc08_my_info_menu | TC08 | 'Memberships' is clickable
+2026-04-18 15:27:34 | INFO     | conftest | Closing browser
+2026-04-18 15:27:37 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:27:40 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:27:41 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:27:41 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:27:41 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:27:41 | INFO     | pages.login_page | Entering password
+2026-04-18 15:27:41 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:27:41 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:27:41 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:27:41 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:27:41 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:27:42 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:27:42 | INFO     | test_tc09_assign_leave | TC09 | Admin logged in
+2026-04-18 15:27:42 | INFO     | pages.home_page | Clicking menu: 'Leave'
+2026-04-18 15:27:43 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//span[text()='Leave']")
+2026-04-18 15:27:44 | DEBUG    | utils.wait_helpers | URL now contains: 'viewLeaveList'
+2026-04-18 15:27:44 | INFO     | test_tc09_assign_leave | TC09 | On Leave module
+2026-04-18 15:27:44 | INFO     | pages.leave_page | Navigating to Assign Leave
+2026-04-18 15:27:44 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//a[text()='Assign Leave']")
+2026-04-18 15:27:44 | DEBUG    | pages.base_page | Clicking: ('xpath', "//a[text()='Assign Leave']")
+2026-04-18 15:27:45 | INFO     | pages.leave_page | Selecting employee: 'Paul'
+2026-04-18 15:27:45 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "//input[@placeholder='Type for hints...']")
+2026-04-18 15:27:49 | INFO     | pages.leave_page | Selecting leave type: 'CAN - FMLA'
+2026-04-18 15:27:50 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "(//div[contains(@class,'oxd-select-text-input')])[1]")
+2026-04-18 15:27:50 | DEBUG    | pages.base_page | Clicking: ('xpath', "(//div[contains(@class,'oxd-select-text-input')])[1]")
+2026-04-18 15:27:50 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//span[text()='CAN - FMLA']")
+2026-04-18 15:27:50 | DEBUG    | pages.base_page | Clicking: ('xpath', "//span[text()='CAN - FMLA']")
+2026-04-18 15:27:50 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "(//input[@placeholder='yyyy-dd-mm'])[1]")
+2026-04-18 15:27:50 | DEBUG    | pages.base_page | Typing '2025-01-05' into ('xpath', "(//input[@placeholder='yyyy-dd-mm'])[1]")
+2026-04-18 15:27:50 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', "(//input[@placeholder='yyyy-dd-mm'])[2]")
+2026-04-18 15:27:50 | DEBUG    | pages.base_page | Typing '2025-01-05' into ('xpath', "(//input[@placeholder='yyyy-dd-mm'])[2]")
+2026-04-18 15:27:50 | INFO     | pages.leave_page | Submitting leave assignment
+2026-04-18 15:27:50 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:27:50 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:27:52 | INFO     | test_tc09_assign_leave | TC09 | Leave assignment form submitted
+2026-04-18 15:27:52 | INFO     | test_tc09_assign_leave | TC09 | Leave assignment verified successfully
+2026-04-18 15:27:52 | INFO     | conftest | Closing browser
+2026-04-18 15:27:55 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:27:58 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:27:58 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:27:59 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'username')
+2026-04-18 15:27:59 | DEBUG    | pages.base_page | Typing 'Admin' into ('name', 'username')
+2026-04-18 15:27:59 | INFO     | pages.login_page | Entering password
+2026-04-18 15:27:59 | DEBUG    | utils.wait_helpers | Element visible: ('name', 'password')
+2026-04-18 15:27:59 | DEBUG    | pages.base_page | Typing 'admin123' into ('name', 'password')
+2026-04-18 15:27:59 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:27:59 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:27:59 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:28:00 | DEBUG    | utils.wait_helpers | URL now contains: 'dashboard'
+2026-04-18 15:28:00 | INFO     | test_tc10_claim_request | TC10 | Logged in
+2026-04-18 15:28:00 | INFO     | pages.claim_page | Navigating to Claim module
+2026-04-18 15:28:01 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//span[text()='Claim']")
+2026-04-18 15:28:01 | DEBUG    | pages.base_page | Clicking: ('xpath', "//span[text()='Claim']")
+2026-04-18 15:28:01 | INFO     | pages.claim_page | Clicking Submit Claim
+2026-04-18 15:28:02 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//a[text()='Submit Claim']")
+2026-04-18 15:28:02 | DEBUG    | pages.base_page | Clicking: ('xpath', "//a[text()='Submit Claim']")
+2026-04-18 15:28:02 | DEBUG    | utils.wait_helpers | URL now contains: 'submitClaim'
+2026-04-18 15:28:02 | INFO     | test_tc10_claim_request | TC10 | On Submit Claim page
+2026-04-18 15:28:02 | INFO     | pages.claim_page | Selecting claim event: 'Travel'
+2026-04-18 15:28:03 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "(//div[contains(@class,'oxd-select-text-input')])[1]")
+2026-04-18 15:28:03 | DEBUG    | pages.base_page | Clicking: ('xpath', "(//div[contains(@class,'oxd-select-text-input')])[1]")
+2026-04-18 15:28:04 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//div[@role='listbox']//div[@role='option'][2]//span")
+2026-04-18 15:28:04 | DEBUG    | pages.base_page | Clicking: ('xpath', "//div[@role='listbox']//div[@role='option'][2]//span")
+2026-04-18 15:28:04 | INFO     | pages.claim_page | Selecting currency: 'USD - United States Dollar'
+2026-04-18 15:28:04 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "(//div[contains(@class,'oxd-select-text-input')])[2]")
+2026-04-18 15:28:04 | DEBUG    | pages.base_page | Clicking: ('xpath', "(//div[contains(@class,'oxd-select-text-input')])[2]")
+2026-04-18 15:28:04 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//div[@role='listbox']//div[@role='option'][2]//span")
+2026-04-18 15:28:04 | DEBUG    | pages.base_page | Clicking: ('xpath', "//div[@role='listbox']//div[@role='option'][2]//span")
+2026-04-18 15:28:04 | INFO     | pages.claim_page | Entering remarks: 'Automated test claim request'
+2026-04-18 15:28:04 | DEBUG    | utils.wait_helpers | Element visible: ('xpath', '//textarea')
+2026-04-18 15:28:04 | DEBUG    | pages.base_page | Typing 'Automated test claim request' into ('xpath', '//textarea')
+2026-04-18 15:28:04 | INFO     | pages.claim_page | Submitting claim request
+2026-04-18 15:28:04 | DEBUG    | utils.wait_helpers | Element clickable: ('xpath', "//button[@type='submit']")
+2026-04-18 15:28:04 | DEBUG    | pages.base_page | Clicking: ('xpath', "//button[@type='submit']")
+2026-04-18 15:28:06 | INFO     | test_tc10_claim_request | TC10 | Claim form submitted
+2026-04-18 15:28:06 | INFO     | test_tc10_claim_request | TC10 | Claim submitted and confirmed successfully
+2026-04-18 15:28:06 | INFO     | conftest | Closing browser
