@@ -1,0 +1,22 @@
+2026-04-18 15:24:10 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:24:12 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:24:13 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:24:13 | INFO     | pages.login_page | Entering password
+2026-04-18 15:24:13 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:24:15 | INFO     | test_tc05_create_user | TC05 | Admin logged in
+2026-04-18 15:24:15 | INFO     | pages.home_page | Clicking menu: 'Admin'
+2026-04-18 15:24:16 | INFO     | pages.admin_page | Clicking 'Add' user button
+2026-04-18 15:24:17 | INFO     | pages.admin_page | Selecting user role: 'ESS'
+2026-04-18 15:24:18 | INFO     | pages.admin_page | Entering employee name: 'Peter Mac Anderson'
+2026-04-18 15:24:26 | INFO     | pages.admin_page | Selecting status: 'Enabled'
+2026-04-18 15:24:26 | INFO     | pages.admin_page | Entering username: 'testuser_auto01'
+2026-04-18 15:24:26 | INFO     | pages.admin_page | Entering password for new user
+2026-04-18 15:24:26 | INFO     | pages.admin_page | Saving new user
+2026-04-18 15:24:28 | INFO     | test_tc05_create_user | TC05 | New user 'testuser_auto01' created
+2026-04-18 15:24:28 | INFO     | pages.home_page | Logging out
+2026-04-18 15:24:29 | INFO     | test_tc05_create_user | TC05 | Admin logged out
+2026-04-18 15:24:29 | INFO     | pages.login_page | Entering username: 'testuser_auto01'
+2026-04-18 15:24:30 | INFO     | pages.login_page | Entering password
+2026-04-18 15:24:30 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:24:31 | INFO     | test_tc05_create_user | TC05 | New user 'testuser_auto01' logged in successfully
+2026-04-18 15:24:31 | INFO     | conftest | Closing browser

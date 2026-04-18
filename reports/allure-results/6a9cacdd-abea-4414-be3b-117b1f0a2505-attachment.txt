@@ -1,0 +1,5 @@
+[32mINFO    [0m conftest:conftest.py:35 Browser launched: CHROME
+[32mINFO    [0m conftest:conftest.py:43 Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[32mINFO    [0m test_tc02_home_url:test_tc02_home_url.py:18 TC02 | URL='https://opensource-demo.orangehrmlive.com/web/index.php/auth/login' | Title='OrangeHRM'
+[32mINFO    [0m test_tc02_home_url:test_tc02_home_url.py:27 TC02 PASSED — Home URL is accessible
+[32mINFO    [0m conftest:conftest.py:45 Closing browser

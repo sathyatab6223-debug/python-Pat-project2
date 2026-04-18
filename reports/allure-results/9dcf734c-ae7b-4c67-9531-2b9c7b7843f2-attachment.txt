@@ -1,0 +1,9 @@
+2026-04-18 15:26:56 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:26:58 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:26:59 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:26:59 | INFO     | pages.login_page | Entering password
+2026-04-18 15:26:59 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:27:00 | INFO     | pages.home_page | Clicking menu: 'My Info'
+2026-04-18 15:27:03 | INFO     | test_tc08_my_info_menu | TC08 | 'Salary' is visible
+2026-04-18 15:27:03 | INFO     | test_tc08_my_info_menu | TC08 | 'Salary' is clickable
+2026-04-18 15:27:03 | INFO     | conftest | Closing browser

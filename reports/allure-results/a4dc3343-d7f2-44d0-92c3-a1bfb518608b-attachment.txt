@@ -1,0 +1,63 @@
+[32mINFO    [0m conftest:conftest.py:35 Browser launched: CHROME
+[32mINFO    [0m conftest:conftest.py:43 Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[32mINFO    [0m pages.login_page:login_page.py:20 Entering username: 'Admin'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('name', 'username')
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing 'Admin' into ('name', 'username')
+[32mINFO    [0m pages.login_page:login_page.py:24 Entering password
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('name', 'password')
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing 'admin123' into ('name', 'password')
+[32mINFO    [0m pages.login_page:login_page.py:28 Clicking Login button
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "//button[@type='submit']")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "//button[@type='submit']")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:37 URL now contains: 'dashboard'
+[32mINFO    [0m test_tc05_create_user:test_tc05_create_user.py:31 TC05 | Admin logged in
+[32mINFO    [0m pages.home_page:home_page.py:63 Clicking menu: 'Admin'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('xpath', "//a[contains(@href,'viewAdminModule')]")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:37 URL now contains: 'viewSystemUsers'
+[32mINFO    [0m pages.admin_page:admin_page.py:31 Clicking 'Add' user button
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "//button[normalize-space()='Add']")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "//button[normalize-space()='Add']")
+[32mINFO    [0m pages.admin_page:admin_page.py:35 Selecting user role: 'ESS'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "(//div[@class='oxd-select-text-input'])[1]")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "(//div[@class='oxd-select-text-input'])[1]")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "//span[text()='ESS']")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "//span[text()='ESS']")
+[32mINFO    [0m pages.admin_page:admin_page.py:40 Entering employee name: 'Peter Mac Anderson'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('xpath', "//input[@placeholder='Type for hints...']")
+[32mINFO    [0m pages.admin_page:admin_page.py:53 Selecting status: 'Enabled'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "(//div[@class='oxd-select-text-input'])[2]")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "(//div[@class='oxd-select-text-input'])[2]")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "//span[text()='Enabled']")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "//span[text()='Enabled']")
+[32mINFO    [0m pages.admin_page:admin_page.py:58 Entering username: 'testuser_auto01'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('xpath', "//label[text()='Username']/following::input[1]")
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing 'testuser_auto01' into ('xpath', "//label[text()='Username']/following::input[1]")
+[32mINFO    [0m pages.admin_page:admin_page.py:62 Entering password for new user
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('xpath', "(//input[@type='password'])[1]")
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing 'Test@1234!' into ('xpath', "(//input[@type='password'])[1]")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('xpath', "(//input[@type='password'])[2]")
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing 'Test@1234!' into ('xpath', "(//input[@type='password'])[2]")
+[32mINFO    [0m pages.admin_page:admin_page.py:69 Saving new user
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "//button[@type='submit']")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "//button[@type='submit']")
+[32mINFO    [0m test_tc05_create_user:test_tc05_create_user.py:49 TC05 | New user 'testuser_auto01' created
+[32mINFO    [0m pages.home_page:home_page.py:38 Logging out
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "//li[contains(@class,'oxd-userdropdown')]")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "//li[contains(@class,'oxd-userdropdown')]")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "//a[text()='Logout']")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "//a[text()='Logout']")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:37 URL now contains: 'login'
+[32mINFO    [0m test_tc05_create_user:test_tc05_create_user.py:55 TC05 | Admin logged out
+[32mINFO    [0m pages.login_page:login_page.py:20 Entering username: 'testuser_auto01'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('name', 'username')
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing 'testuser_auto01' into ('name', 'username')
+[32mINFO    [0m pages.login_page:login_page.py:24 Entering password
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('name', 'password')
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing 'Test@1234!' into ('name', 'password')
+[32mINFO    [0m pages.login_page:login_page.py:28 Clicking Login button
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "//button[@type='submit']")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "//button[@type='submit']")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:37 URL now contains: 'dashboard'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('xpath', "//h6[text()='Dashboard']")
+[32mINFO    [0m test_tc05_create_user:test_tc05_create_user.py:66 TC05 | New user 'testuser_auto01' logged in successfully
+[32mINFO    [0m conftest:conftest.py:45 Closing browser

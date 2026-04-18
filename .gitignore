@@ -1,8 +1,6 @@
 # Claude Code
 .claude/
 
-# Test reports (auto-generated)
-reports/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,0 +1,5 @@
+2026-04-18 15:22:51 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:22:54 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:22:55 | INFO     | test_tc03_login_fields | TC03 | Password field is visible
+2026-04-18 15:22:55 | INFO     | test_tc03_login_fields | TC03 | Password field is enabled
+2026-04-18 15:22:55 | INFO     | conftest | Closing browser

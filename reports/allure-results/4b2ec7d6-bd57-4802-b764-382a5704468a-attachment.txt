@@ -1,0 +1,12 @@
+2026-04-18 15:24:34 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:24:37 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:24:38 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:24:38 | INFO     | pages.login_page | Entering password
+2026-04-18 15:24:38 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:24:40 | INFO     | test_tc06_user_in_admin_list | TC06 | Admin logged in
+2026-04-18 15:24:40 | INFO     | pages.home_page | Clicking menu: 'Admin'
+2026-04-18 15:24:41 | INFO     | test_tc06_user_in_admin_list | TC06 | On User Management page
+2026-04-18 15:24:41 | INFO     | pages.admin_page | Searching for user: 'testuser_auto01'
+2026-04-18 15:24:44 | INFO     | test_tc06_user_in_admin_list | TC06 | Search submitted for 'testuser_auto01'
+2026-04-18 15:24:44 | INFO     | test_tc06_user_in_admin_list | TC06 | User 'testuser_auto01' found in admin list
+2026-04-18 15:24:44 | INFO     | conftest | Closing browser

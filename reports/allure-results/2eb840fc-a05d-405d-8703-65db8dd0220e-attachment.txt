@@ -1,0 +1,37 @@
+[32mINFO    [0m conftest:conftest.py:35 Browser launched: CHROME
+[32mINFO    [0m conftest:conftest.py:43 Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[32mINFO    [0m pages.login_page:login_page.py:20 Entering username: 'Admin'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('name', 'username')
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing 'Admin' into ('name', 'username')
+[32mINFO    [0m pages.login_page:login_page.py:24 Entering password
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('name', 'password')
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing 'admin123' into ('name', 'password')
+[32mINFO    [0m pages.login_page:login_page.py:28 Clicking Login button
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "//button[@type='submit']")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "//button[@type='submit']")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:37 URL now contains: 'dashboard'
+[32mINFO    [0m test_tc09_assign_leave:test_tc09_assign_leave.py:32 TC09 | Admin logged in
+[32mINFO    [0m pages.home_page:home_page.py:63 Clicking menu: 'Leave'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('xpath', "//span[text()='Leave']")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:37 URL now contains: 'viewLeaveList'
+[32mINFO    [0m test_tc09_assign_leave:test_tc09_assign_leave.py:39 TC09 | On Leave module
+[32mINFO    [0m pages.leave_page:leave_page.py:25 Navigating to Assign Leave
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "//a[text()='Assign Leave']")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "//a[text()='Assign Leave']")
+[32mINFO    [0m pages.leave_page:leave_page.py:29 Selecting employee: 'Paul'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('xpath', "//input[@placeholder='Type for hints...']")
+[32mINFO    [0m pages.leave_page:leave_page.py:42 Selecting leave type: 'CAN - FMLA'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "(//div[contains(@class,'oxd-select-text-input')])[1]")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "(//div[contains(@class,'oxd-select-text-input')])[1]")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "//span[text()='CAN - FMLA']")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "//span[text()='CAN - FMLA']")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('xpath', "(//input[@placeholder='yyyy-dd-mm'])[1]")
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing '2025-01-05' into ('xpath', "(//input[@placeholder='yyyy-dd-mm'])[1]")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('xpath', "(//input[@placeholder='yyyy-dd-mm'])[2]")
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing '2025-01-05' into ('xpath', "(//input[@placeholder='yyyy-dd-mm'])[2]")
+[32mINFO    [0m pages.leave_page:leave_page.py:53 Submitting leave assignment
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "//button[@type='submit']")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "//button[@type='submit']")
+[32mINFO    [0m test_tc09_assign_leave:test_tc09_assign_leave.py:51 TC09 | Leave assignment form submitted
+[32mINFO    [0m test_tc09_assign_leave:test_tc09_assign_leave.py:61 TC09 | Leave assignment verified successfully
+[32mINFO    [0m conftest:conftest.py:45 Closing browser

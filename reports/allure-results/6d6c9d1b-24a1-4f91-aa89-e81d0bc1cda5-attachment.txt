@@ -1,0 +1,26 @@
+[32mINFO    [0m conftest:conftest.py:35 Browser launched: CHROME
+[32mINFO    [0m conftest:conftest.py:43 Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[32mINFO    [0m pages.login_page:login_page.py:20 Entering username: 'Admin'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('name', 'username')
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing 'Admin' into ('name', 'username')
+[32mINFO    [0m pages.login_page:login_page.py:24 Entering password
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('name', 'password')
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing 'admin123' into ('name', 'password')
+[32mINFO    [0m pages.login_page:login_page.py:28 Clicking Login button
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "//button[@type='submit']")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "//button[@type='submit']")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:37 URL now contains: 'dashboard'
+[32mINFO    [0m test_tc06_user_in_admin_list:test_tc06_user_in_admin_list.py:29 TC06 | Admin logged in
+[32mINFO    [0m pages.home_page:home_page.py:63 Clicking menu: 'Admin'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('xpath', "//a[contains(@href,'viewAdminModule')]")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:37 URL now contains: 'viewSystemUsers'
+[32mINFO    [0m test_tc06_user_in_admin_list:test_tc06_user_in_admin_list.py:36 TC06 | On User Management page
+[32mINFO    [0m pages.admin_page:admin_page.py:83 Searching for user: 'testuser_auto01'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('xpath', "//label[text()='Username']/following::input[1]")
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing 'testuser_auto01' into ('xpath', "//label[text()='Username']/following::input[1]")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "//button[@type='submit']")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "//button[@type='submit']")
+[32mINFO    [0m test_tc06_user_in_admin_list:test_tc06_user_in_admin_list.py:43 TC06 | Search submitted for 'testuser_auto01'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('xpath', "//div[@class='oxd-table-body']//div[@role='row'][1]//div[@role='cell'][2]")
+[32mINFO    [0m test_tc06_user_in_admin_list:test_tc06_user_in_admin_list.py:55 TC06 | User 'testuser_auto01' found in admin list
+[32mINFO    [0m conftest:conftest.py:45 Closing browser

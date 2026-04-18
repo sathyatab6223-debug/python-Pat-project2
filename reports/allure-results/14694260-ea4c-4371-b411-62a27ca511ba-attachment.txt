@@ -1,0 +1,15 @@
+2026-04-18 15:27:37 | INFO     | conftest | Browser launched: CHROME
+2026-04-18 15:27:40 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-18 15:27:41 | INFO     | pages.login_page | Entering username: 'Admin'
+2026-04-18 15:27:41 | INFO     | pages.login_page | Entering password
+2026-04-18 15:27:41 | INFO     | pages.login_page | Clicking Login button
+2026-04-18 15:27:42 | INFO     | test_tc09_assign_leave | TC09 | Admin logged in
+2026-04-18 15:27:42 | INFO     | pages.home_page | Clicking menu: 'Leave'
+2026-04-18 15:27:44 | INFO     | test_tc09_assign_leave | TC09 | On Leave module
+2026-04-18 15:27:44 | INFO     | pages.leave_page | Navigating to Assign Leave
+2026-04-18 15:27:45 | INFO     | pages.leave_page | Selecting employee: 'Paul'
+2026-04-18 15:27:49 | INFO     | pages.leave_page | Selecting leave type: 'CAN - FMLA'
+2026-04-18 15:27:50 | INFO     | pages.leave_page | Submitting leave assignment
+2026-04-18 15:27:52 | INFO     | test_tc09_assign_leave | TC09 | Leave assignment form submitted
+2026-04-18 15:27:52 | INFO     | test_tc09_assign_leave | TC09 | Leave assignment verified successfully
+2026-04-18 15:27:52 | INFO     | conftest | Closing browser

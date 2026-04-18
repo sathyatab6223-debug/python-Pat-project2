@@ -1,0 +1,15 @@
+[32mINFO    [0m conftest:conftest.py:35 Browser launched: CHROME
+[32mINFO    [0m conftest:conftest.py:43 Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[32mINFO    [0m test_tc01_data_driven_login:test_tc01_data_driven_login.py:31 TC01 | username='invaliduser' | expected='fail'
+[32mINFO    [0m pages.login_page:login_page.py:20 Entering username: 'invaliduser'
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('name', 'username')
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing 'invaliduser' into ('name', 'username')
+[32mINFO    [0m pages.login_page:login_page.py:24 Entering password
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('name', 'password')
+[35mDEBUG   [0m pages.base_page:base_page.py:36 Typing 'admin123' into ('name', 'password')
+[32mINFO    [0m pages.login_page:login_page.py:28 Clicking Login button
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:27 Element clickable: ('xpath', "//button[@type='submit']")
+[35mDEBUG   [0m pages.base_page:base_page.py:30 Clicking: ('xpath', "//button[@type='submit']")
+[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('xpath', "//p[contains(@class,'oxd-alert-content-text')]")
+[32mINFO    [0m test_tc01_data_driven_login:test_tc01_data_driven_login.py:66 Login correctly rejected. Error: 'Invalid credentials'
+[32mINFO    [0m conftest:conftest.py:45 Closing browser
