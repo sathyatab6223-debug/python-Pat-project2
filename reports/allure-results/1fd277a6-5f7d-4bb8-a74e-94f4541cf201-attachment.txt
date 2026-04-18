@@ -1,5 +1,0 @@
-2026-04-18 15:22:31 | INFO     | conftest | Browser launched: CHROME
-2026-04-18 15:22:41 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-18 15:22:41 | INFO     | test_tc02_home_url | TC02 | URL='https://opensource-demo.orangehrmlive.com/web/index.php/auth/login' | Title='OrangeHRM'
-2026-04-18 15:22:41 | INFO     | test_tc02_home_url | TC02 PASSED — Home URL is accessible
-2026-04-18 15:22:41 | INFO     | conftest | Closing browser

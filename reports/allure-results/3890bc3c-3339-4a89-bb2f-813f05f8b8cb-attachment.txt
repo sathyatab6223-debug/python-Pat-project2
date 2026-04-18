@@ -1,9 +1,0 @@
-2026-04-18 15:26:15 | INFO     | conftest | Browser launched: CHROME
-2026-04-18 15:26:18 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-18 15:26:18 | INFO     | pages.login_page | Entering username: 'Admin'
-2026-04-18 15:26:19 | INFO     | pages.login_page | Entering password
-2026-04-18 15:26:19 | INFO     | pages.login_page | Clicking Login button
-2026-04-18 15:26:20 | INFO     | pages.home_page | Clicking menu: 'My Info'
-2026-04-18 15:26:22 | INFO     | test_tc08_my_info_menu | TC08 | 'Emergency Contacts' is visible
-2026-04-18 15:26:22 | INFO     | test_tc08_my_info_menu | TC08 | 'Emergency Contacts' is clickable
-2026-04-18 15:26:22 | INFO     | conftest | Closing browser

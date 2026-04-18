@@ -1,8 +1,0 @@
-2026-04-18 15:24:02 | INFO     | conftest | Browser launched: CHROME
-2026-04-18 15:24:04 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-18 15:24:05 | INFO     | pages.login_page | Entering username: 'Admin'
-2026-04-18 15:24:05 | INFO     | pages.login_page | Entering password
-2026-04-18 15:24:05 | INFO     | pages.login_page | Clicking Login button
-2026-04-18 15:24:07 | INFO     | test_tc04_menu_items | TC04 | 'Dashboard' is visible
-2026-04-18 15:24:07 | INFO     | test_tc04_menu_items | TC04 | 'Dashboard' is clickable
-2026-04-18 15:24:07 | INFO     | conftest | Closing browser

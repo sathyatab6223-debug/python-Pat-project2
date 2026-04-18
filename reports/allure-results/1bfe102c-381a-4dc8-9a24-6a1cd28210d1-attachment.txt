@@ -1,8 +1,0 @@
-2026-04-18 15:23:33 | INFO     | conftest | Browser launched: CHROME
-2026-04-18 15:23:36 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-18 15:23:37 | INFO     | pages.login_page | Entering username: 'Admin'
-2026-04-18 15:23:37 | INFO     | pages.login_page | Entering password
-2026-04-18 15:23:37 | INFO     | pages.login_page | Clicking Login button
-2026-04-18 15:23:39 | INFO     | test_tc04_menu_items | TC04 | 'Recruitment' is visible
-2026-04-18 15:23:39 | INFO     | test_tc04_menu_items | TC04 | 'Recruitment' is clickable
-2026-04-18 15:23:39 | INFO     | conftest | Closing browser

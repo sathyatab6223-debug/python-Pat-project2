@@ -1,8 +1,0 @@
-2026-04-18 15:22:08 | INFO     | conftest | Browser launched: CHROME
-2026-04-18 15:22:11 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-18 15:22:11 | INFO     | test_tc01_data_driven_login | TC01 | username='Admin' | expected='fail'
-2026-04-18 15:22:12 | INFO     | pages.login_page | Entering username: 'Admin'
-2026-04-18 15:22:13 | INFO     | pages.login_page | Entering password
-2026-04-18 15:22:13 | INFO     | pages.login_page | Clicking Login button
-2026-04-18 15:22:28 | ERROR    | utils.wait_helpers | Timeout: element not visible after 15s — ('xpath', "//p[contains(@class,'oxd-alert-content-text')]")
-2026-04-18 15:22:28 | INFO     | conftest | Closing browser

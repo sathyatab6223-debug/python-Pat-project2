@@ -1,7 +1,0 @@
-[32mINFO    [0m conftest:conftest.py:35 Browser launched: CHROME
-[32mINFO    [0m conftest:conftest.py:43 Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('name', 'password')
-[32mINFO    [0m test_tc03_login_fields:test_tc03_login_fields.py:40 TC03 | Password field is visible
-[35mDEBUG   [0m utils.wait_helpers:wait_helpers.py:15 Element visible: ('name', 'password')
-[32mINFO    [0m test_tc03_login_fields:test_tc03_login_fields.py:45 TC03 | Password field is enabled
-[32mINFO    [0m conftest:conftest.py:45 Closing browser

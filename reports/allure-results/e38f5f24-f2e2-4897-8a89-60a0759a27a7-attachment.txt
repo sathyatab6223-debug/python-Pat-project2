@@ -1,8 +1,0 @@
-2026-04-18 15:21:39 | INFO     | conftest | Browser launched: CHROME
-2026-04-18 15:21:41 | INFO     | conftest | Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-18 15:21:41 | INFO     | test_tc01_data_driven_login | TC01 | username='invaliduser' | expected='fail'
-2026-04-18 15:21:42 | INFO     | pages.login_page | Entering username: 'invaliduser'
-2026-04-18 15:21:42 | INFO     | pages.login_page | Entering password
-2026-04-18 15:21:42 | INFO     | pages.login_page | Clicking Login button
-2026-04-18 15:21:44 | INFO     | test_tc01_data_driven_login | Login correctly rejected. Error: 'Invalid credentials'
-2026-04-18 15:21:44 | INFO     | conftest | Closing browser
