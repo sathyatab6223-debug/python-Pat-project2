@@ -16,7 +16,6 @@ def _build_driver():
     if browser == "chrome":
         options = ChromeOptions()
         options.add_argument("--start-maximized")
-        options.add_argument("--disable-notifications")
         driver = webdriver.Chrome(options=options)
 
     elif browser == "firefox":
